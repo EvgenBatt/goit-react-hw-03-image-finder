@@ -23,5 +23,6 @@ export const ImageGalleryItem = ({
 ImageGalleryItem.propTypes = {
   webformatURL: PropTypes.string.isRequired,
   tags: PropTypes.string.isRequired,
+  largeImageURL: PropTypes.string.isRequired,
   openModal: PropTypes.func.isRequired,
 };

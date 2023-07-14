@@ -36,7 +36,6 @@ export class App extends Component {
         totalHits: totalHits,
         isLoading: false,
       }));
-      console.log('data:', hits, totalHits);
     } catch (error) {
     } finally {
       this.setState({ isLoading: false });
