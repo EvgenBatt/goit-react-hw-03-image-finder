@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import searchIcon from './Image/search-icon.svg';
 
 export const Header = styled.header`
   top: 0;
@@ -11,8 +12,8 @@ export const Header = styled.header`
   min-height: 64px;
   padding-right: 24px;
   padding-left: 24px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   color: #fff;
   background-color: #3f51b5;
   box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
@@ -31,20 +32,22 @@ export const Form = styled.form`
 
 export const Button = styled.button`
   display: inline-block;
-  width: 48px;
-  height: 48px;
+  width: 38px;
+  height: 38px;
   border: 0;
-  background-image: url('https://image.flaticon.com/icons/svg/149/149852.svg');
-  background-size: 40%;
+  background-image: url(${searchIcon});
+  background-size: 70%;
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.6;
+  opacity: 0.7;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   outline: none;
+  background-color: #ededed;
 
   &:hover {
     opacity: 1;
+    background-color: #d0d0d0;
   }
 `;
 
@@ -64,14 +67,14 @@ export const Input = styled.input`
   display: inline-block;
   width: 100%;
   font: inherit;
-  font-size: 20px;
+  font-size: 18px;
   border: none;
   outline: none;
-  padding-left: 4px;
-  padding-right: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
 
   &::placeholder {
     font: inherit;
-    font-size: 18px;
+    font-size: 16px;
   }
 `;

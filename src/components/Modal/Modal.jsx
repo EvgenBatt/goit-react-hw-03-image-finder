@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Overlay, ModalDiv } from './Modal.styled';
+import { Overlay, ModalDiv, Button } from './Modal.styled';
 
 export class Modal extends Component {
   handleEsc = e => {
@@ -26,7 +26,13 @@ export class Modal extends Component {
     return (
       <Overlay onClick={this.clickBackdrop}>
         <ModalDiv>
-          <img src={bigImageUrl} alt={imageTags} loading="lazy" width="1000px"/>
+          <Button onClick={this.clickBackdrop}>X</Button>
+          <img
+            src={bigImageUrl}
+            alt={imageTags}
+            loading="lazy"
+            width="1000px"
+          />
         </ModalDiv>
       </Overlay>
     );
